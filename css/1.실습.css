@@ -1,0 +1,32 @@
+a:link{
+    font-size: 1.5em; color: darkcyan;
+}
+a:visited{
+    color: darkcyan;
+}
+a:hover{
+    color: green;
+}
+input[type="text"]:enabled{
+    border: 0.2em solid forestgreen;
+}
+ol>li:first-of-type{
+    color: rgb(52, 114, 83);
+}
+ol>li:nth-last-of-type(2){
+    border:1px solid rgb(33, 138, 89);
+}
+ol>li:nth-last-child(1){
+    color: rgb(39, 68, 36);
+}
+
+blockquote::first-line{
+    text-decoration: underline;
+}
+blockquote::selection{
+    color: rgb(89, 212, 96);
+}
+
+blockquote::after{
+    content: '[먀옹]';
+}

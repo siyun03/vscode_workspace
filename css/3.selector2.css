@@ -1,0 +1,95 @@
+/*가상 선택자 (Pseudo class selector)*/
+a:link{font-size: 1.2em ;color :black;}
+
+a:visited{color:brown}
+
+a:hover{color: rgb(78, 78, 194);}
+
+a:active{color:yellow}
+
+input[type="text"]:focus{background-color: grey;}
+
+input[type="checkbox"]:checked{
+    background-color: burlywood;
+}
+
+input[type="text"]:enabled{
+    border: 3px solid rgb(35, 48, 10);
+}
+
+input[type="text"]:disabled{
+    border: 3px solid olivedrab; 
+}
+
+/*자식 중 첫번째*/
+ul>li:first-child{
+    font-size: 1.2em;
+}
+
+/*자식 중 마지막*/
+ul>li:last-child{
+    font-size: 1.7em;
+}
+
+/*자식 중 두번째*/
+ul>li:nth-child(2){
+    font-size: 1.5em;
+}
+
+/*자식 중 뒤에서 두번째*/
+ul>li:nth-last-child(2){
+    color: thistle;
+}
+
+/*li 타입 중 첫번째*/
+ul>li:first-of-type{
+    color: tomato;
+}
+
+/*li 타입 중 마지막*/
+ul>li:last-of-type{
+    color: wheat;
+}
+
+/*li 타입 중 첫번째 */
+ul>li:nth-of-type(1){
+    border:1px solid rosybrown;
+}
+
+/*li 타입 중 뒤에서 첫번째 */
+ul>li:nth-last-of-type(1){
+    border:1px solid rgb(78, 78, 194);
+}
+
+/*div 자손 중 input이 아닌 것*/
+div :not(input){
+    font-style: italic;
+}
+
+/*첫번째 문자*/
+p::first-letter{
+    font-size: 2em; color: blue;
+}
+
+/*첫번째 라인*/
+p::first-line{
+    text-decoration: underline;
+}
+
+/*콘텐츠 앞에 추가*/
+p::before{
+    content: '[시작]';
+}
+
+/*콘텐츠 뒤에 추가*/
+p::after{
+    content: '[끝]';
+}
+
+/*마우스로 드래그 된 것*/
+p::selection{
+    color: chocolate;
+}
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        caption { font-size: 25px; font-weight: bold; }
+        table, th, td { border : 1px solid rgb(76, 24, 24); border-collapse: collapse;}
+        thead { background-color: solid rgb(81, 124, 105);}
+        tfoot { background-color: #eee;font-weight: bold; }
+        tbody { background-color: #eee;}
+        th, td{ width: 60px;height: 25px; text-align: center;}
+</style>
+ </head>
+ <body>
+ <table>
+    <!--테이블 제목-->
+    <caption>테이블제목</caption>
+    <!--테이블 컬럼 영역-->
+    <thead>
+       <tr> 
+        <td>이름</td>
+        <td>국어</td>
+        <td>영어</td>
+        <td>수학</td>
+       </tr>
+    </thead>
+    <!--테이블 데이터 영역-->
+    <tbody>
+        <tr>
+            <td>홍길동</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+       <tr>
+        <td>강감찬</td>
+        <td>90</td>
+        <td>90</td>
+        <td>90</td>
+       </tr>
+       <tr>
+        <td>이순신</td>
+        <td>80</td>
+        <td>80</td>
+        <td>80</td>
+       </tr>
+    </tbody>
+    <!--테이블 요약정보 영역-->
+    <tfoot>
+        <tr>
+            <td>총점</td>
+            <td>270</td>
+            <td>270</td>
+            <td>270</td>
+        </tr>
+    </tfoot>
+ </table>    
+
+ <table>
+    <caption>span</caption>
+     <tbody>
+        <tr>
+            <td colspan="2"></td> <!--열 합치기-->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td> <!--행 합치기-->
+            <td></td>
+            <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>  
+    
+     </tbody>
+ </table>
+ <!--테이블 실습-->
+ <table>
+ <caption>실습</caption>
+    <thead>
+       <tr> 
+        <td colspan="2">부서/성명/아이디</td>
+        <td colspan="2">분기별 연봉</td>
+        <td>비고</td>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">인사과</td>
+            <td>홍길동</td>
+            <td >3/4</td>
+            <td>1000</td>
+            <td>동결</td>
+        </tr>
+        <tr>
+            <td>HONG</td>
+            <td>4/4</td>
+            <td>1200</td>
+            <td>20%인상</td>
+
+        </tr>
+        <tr>
+            <td rowspan="2">기획과</td>
+            <td>이순신 LEE</td>
+            <td>3/4</td>
+            <td>2000</td>
+            <td>동결</td>
+        </tr>
+        <tr>
+            <td>LEE</td>
+            <td>4/4</td>
+            <td>2200</td>
+            <td>10%인상</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
