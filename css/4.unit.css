@@ -1,0 +1,17 @@
+body{} /*16px*/
+
+div{ font-size: 20px;}
+
+#p1{ font-size: 30px;}
+
+#p2{ font-size: 2em;}/*40px*/
+
+#p3{ font-size: 150%;}/*30px*/
+
+#p4{ font-size: 2rem;}/*32px*/
+
+/* 색상 단위 */
+#p1{ background: tan;}
+#p2{ background-color: rgb(87, 72, 24);}
+#p3{ background-color: rgb(204, 127, 26);}
+#p4{ background-color: rgb(90, 52, 2);}

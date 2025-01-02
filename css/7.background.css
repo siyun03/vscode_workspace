@@ -1,0 +1,18 @@
+body{
+    background-image: url(../html/assets/먀옹.avif);
+    /*background-repeat:repeat;*/
+    /*background-repeat:no-repeat;*/
+    /*background-size: 50%;*/
+    /*background-size: contain;*/
+    background-attachment: fixed;    
+}
+div{
+    background-color: coral;
+    font-size: 30px;
+    height: 5000px;
+}
+p{
+    background-image: url(../html/assets/먀옹.avif);
+    background-position: center;
+    background-repeat: repeat;
+}

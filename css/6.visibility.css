@@ -1,0 +1,18 @@
+p{
+    background-color: aquamarine;
+    font-size: 2em;
+}
+
+#p1{
+    display: block; /*영역있음, 화면보임*/
+    visibility: visible;/*영역있음,화면보임*/
+}
+#p2{
+    display:none ;/*영역없음, 화면 안보임*/
+    visibility: hidden;/*영역없음, 화면안보임*/
+    }
+#p3{}
+ul li{
+    /*inline으로 표시, 영역있음*/
+    display: inline-block;
+}

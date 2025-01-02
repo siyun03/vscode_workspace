@@ -1,0 +1,27 @@
+/*옆으로 배치, 영역도 가자도록 */
+p{ margin: 0;, padding: 0;}
+
+p {
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+}
+#p1{
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+}
+#p2{
+    background-color: beige;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: rgb(70, 70, 218);
+    border-radius: 10px;
+}
+#p3{ 
+    background-color: cadetblue;
+    border-top:50px solid rgb(30, 30, 117);
+    border-right:50px solid rgb(69, 69, 190) ;
+    border-bottom:50px solid rgb(52, 52, 214) ;
+    border-left:50px solid blue;
+    border-radius: 0 25px 25px 0;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+p#title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+header{
+    text-align: right;
+}
+ul{
+    clear: both;
+}
+ul>li#menu{
+    text-align: center;
+    border: 1px solid blanchedalmond;
+    background-color: antiquewhite;
+    float: left;
+    list-style: none;
+    margin: right;
+    padding: 5px 10px;
+    width: 50px;
+    height: 50px;
+}
+article{
+    text-align: center;
+    background-color: rgb(233, 245, 255);
+    border: 3px solid wheat;
+    width: 500px;
+    height: 300px;
+}
+footer{
+    text-align: end;
+    float: var();
+}
+div#banner{
+    text-align: right;
+   
+}
