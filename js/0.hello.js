@@ -69,4 +69,84 @@ let man = {
   };
   console.log(person['name']);
 
-  
+  var prefix = 'prop';
+  var i = 0;
+  var obj = {};
+  obj[prefix + '-' + ++i] = i;
+  obj[prefix + '-' + ++i] = i;
+  obj[prefix + '-' + ++i] = i;
+  console.log(obj);
+
+  const prefix2 = 'prop';
+  let i2 = 0;
+  const obj2 = {
+    [`${prefix2}-${++i2}`] : i2,
+    [`${prefix2}-${++i2}`] : i2,
+    [`${prefix2}-${++i2}`] : i2
+  }
+  console.log(obj2);
+
+
+  var var1 = 1;
+
+  if(true){
+    var var2 = 2;
+    if(true){
+      var var3 = 3;
+    }
+  }
+  function foo(){
+    var var4 = 4;
+    function bar(){
+      var var5 = 5;
+      console.log(var5);
+    }
+    console.log(var4);
+    bar();
+  }
+
+  console.log(var1);
+  console.log(var2);
+  console.log(var3);
+  foo();
+
+var x = 'script';
+
+function foo(){
+  var x = 'java';
+  return x;
+}
+console.log(foo(),x);
+
+var i = 10;
+
+for (var i =0; i<5; i++){
+  console.log(i);
+}
+console.log(i);
+
+var y = 'home';
+
+function foo2(){
+  console.log(y);
+  var y = 'sweet';
+}
+foo2()
+console.log(y);
+
+console.log(v); // undefined
+
+function outer(){
+  console.log(v); // undefined
+  function inner(){
+    console.log(v); // undefined
+    var v = 'inner';
+    console.log(v); // inner
+  }
+  var v= 'outer';
+  inner();
+  console.log(v); // outer
+}
+outer();
+var v = 'global';
+

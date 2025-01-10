@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <script>
+    // 전역 객체 사용을 피하기 위해 객체를 생성해서 
+    // 변수나 함수를 객체의 프라터피화 한다.
+    window.alert('Hi!'); 
+
+    const obj = {};
+    obj.v = 1;
+    obj.func = function(){
+        console.log('func함수 호출됨');
+    }
+    console.log(obj.v);
+    obj.func();
+</script>
+</body>
+</html>
