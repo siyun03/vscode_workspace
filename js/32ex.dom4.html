@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ex4</title>
+    <script defer src="32ex.dom4.js"></script>
+    <style>
+        #fileList, #nameList{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            float: left;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="fileList">
+        <input type="file">&nbsp;
+        <button id="plus">+</button>&nbsp;
+        <button id="minus">-</button>
+    </div>
+    <div id="nameList">
+        <p>선택한 파일목록</p>
+        <ul></ul>
+    </div>
+</body>
+</html>
