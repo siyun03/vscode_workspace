@@ -89,24 +89,3 @@ const kang = {
     }
 };
 console.log(`${kang.getName()}은 ${kang.getAge()}살 입니다.`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

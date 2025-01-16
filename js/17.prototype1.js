@@ -52,19 +52,3 @@ console.log(Person.prototype.__proto__); // Object 생성자함수의 prototype
 console.log(hong.__proto__.constructor); // Person 생성자함수
 console.log(hong.__proto__.__proto__); // Object 생성자함수의 prototype
 console.log(hong.__proto__.__proto__.prototype.constructor); // Object 생성자함수
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
