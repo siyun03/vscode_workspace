@@ -15,11 +15,11 @@
 </head>
 <body>
     <p>
-        성명 <input type="text">&nbsp;
-        국어 <input type="text">&nbsp;
-        영어 <input type="text">&nbsp;
-        수학 <input type="text">&nbsp;
-        <button>등록</button>
+        성명 <input id="name" type="text">&nbsp;
+        국어 <input id="kor" type="text">&nbsp;
+        영어 <input id="eng" type="text">&nbsp;
+        수학 <input id="math" type="text">&nbsp;
+        <button id="update">등록</button>
     </p>    
     <table>
         <thead>
@@ -39,7 +39,9 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td colspan="2"></td>
+                <td></td>
+                <td id="del"><button>삭제</button></td>
+                <!-- <td colspan="2"></td> -->
             </tr>
         </tfoot>
     </table>
