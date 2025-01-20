@@ -1,11 +1,5 @@
 const url = 'https://jsonplaceholder.typicode.com/users';
 const func = function(){
-    
-};
-
-
-// 버튼 클릭 시 서버에서 데이터 가져오기
-document.getElementById('getAllUsers').addEventListener('click', function () {
     fetch(url)
     .then(response => response.json()) // 응답 데이터를 JSON으로 변환
     .then(data => {
@@ -28,12 +22,15 @@ document.getElementById('getAllUsers').addEventListener('click', function () {
         tbody.appendChild(newRow); // 테이블에 새 줄 추가
     });
     })
-    .catch(error => console.error('Error fetching data:', error)); // 에러 처리
+    .catch(error => console.error('Error fetching data:', error));
+};
+
+
+// 버튼 클릭 시 서버에서 데이터 가져오기
+document.getElementById('getAllUsers').addEventListener('click', function () {
+    func();
 });
 
 document.getElementById('getUser').addEventListener('click', function(){
-    fetch(url);
-
-
-
+    func();
 })
