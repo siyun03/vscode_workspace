@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest</title>
+    <script defer src="36ex.rest2.js"></script>
+    <style>
+        body { font-size: 1.2em; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;}
+        p { 
+            width: 800px; height: 50px; border: 1px solid #ddd;
+            margin: 0 auto 15px auto; border-radius: 10px; 
+            text-align: center; line-height: 50px;
+        }
+        .pid { width: 100px; }
+        .pname { width: 200px; }
+        .page { width: 40px; }
+        table { width:800px; margin: 0 auto; }
+        caption { font-size: 1.5em; font-weight: bold; margin-bottom: 10px;}
+        thead { background-color: #eee; }
+        table, th, td { border: 1px solid #333; border-collapse: collapse; }
+    </style>
+</head>
+<body>
+    <p>
+        <button id="listPerson">데이터가져오기</button>&nbsp;
+        id <input class="pid" type="text">&nbsp;
+        name <input class="pname" type="text">&nbsp;
+        age <input class="page" type="text">&nbsp;
+        <button id="registPerson">등록</button>
+    </p>
+    <table>
+        <caption>:: PERSONS ::</caption>
+        <colgroup>
+            <col width="15%">
+            <col width="40%">
+            <col width="15%">
+            <col width="30%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>수정/삭제</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td><input class="pid" type="text"></td>
+                <td><input class="pname" type="text"></td>
+                <td><input class="page" type="text"></td>
+                <td>
+                    <button id="sujung">수정</button>&nbsp;
+                    <button>삭제</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
