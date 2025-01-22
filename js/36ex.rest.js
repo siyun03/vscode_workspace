@@ -152,4 +152,4 @@ const deletePerson = pid => {
 }
 // 특정 버튼(또는 다른 HTML 요소)을 프로그램matically 클릭하는 기능
 // 사용자가 데이터를 삭제한 후, 자동으로 "데이터 가져오기" 버튼을 클릭한 것처럼 동작하게 함
-listPerson.click();
+listPerson.click(); // 처음부터 리스트 나오게 하기 위함
